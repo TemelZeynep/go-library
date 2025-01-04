@@ -1,0 +1,15 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "Go Programming",
+        "author": "John Doe"
+      },
+      {
+        "id": 2,
+        "title": "Learning Go",
+        "author": "Jane Smith"
+      }
+    ]
+  }
+  

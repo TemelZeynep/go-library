@@ -93,7 +93,6 @@ func addBook(w http.ResponseWriter, r *http.Request) {
 	//"Kaynak başarıyla oluşturuldu" anlamında bir mesaj iletiyorum.
 
 	// Dosyayı güncelle.
-	saveBooksToFile("db.json")
 	w.WriteHeader(http.StatusCreated)
 	//newBook nesnesini JSON formatına dönüştürüyorum
 	if err := json.NewEncoder(w).Encode(newBook); err != nil {
@@ -103,9 +102,6 @@ func addBook(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func saveBooksToFile(s string) {
-	panic("unimplemented")
-}
 
 // PUT/books/{id}
 
